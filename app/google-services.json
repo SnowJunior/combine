@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "907948191776",
+    "firebase_url": "https://pika-eb156.firebaseio.com",
+    "project_id": "pika-eb156",
+    "storage_bucket": "pika-eb156.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907948191776:android:c1b4a3514144bc55",
+        "android_client_info": {
+          "package_name": "com.example.josephinemenge.pika"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907948191776-vj67g1boh5kol3kk583kn0gkr8hjvp0u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.josephinemenge.pika",
+            "certificate_hash": "37f85e59ddf0cfc86acdcc4265c2f46bd2d38265"
+          }
+        },
+        {
+          "client_id": "907948191776-tjlnskhdf5mpr631pemv6vfahva35nn8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCc1TzJpAMaGEPVsvYJ8kJjRXTe1WOd1d8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "907948191776-tjlnskhdf5mpr631pemv6vfahva35nn8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

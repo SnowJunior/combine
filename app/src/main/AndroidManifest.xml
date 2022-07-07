@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.josephinemenge.pika">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true">
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".MainActivity"
+          android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".ui.RecipeListActivity"
+            android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.josephinemenge.pika.MainActivity" />
+        </activity>
+
+
+        <activity
+            android:name=".ui.RecipeDetailActivity"
+            android:theme="@style/AppTheme">
+        <meta-data
+            android:value="com.example.josephinemenge.pika.MainActivity"
+            android:name="android.support.PARENT_ACTIVITY"/>
+        </activity>
+
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".ui.SavedRecipeListActivity"
+            android:theme="@style/AppTheme">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.josephinemenge.pika.MainActivity" />
+        </activity>
+
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".ui.CreateAccountActivity"
+            android:theme="@style/NoActionBar"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".ui.LoginActivity"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

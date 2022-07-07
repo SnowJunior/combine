@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.josephinemenge.pika.ui.CreateAccountActivity"
+    android:background="@drawable/food_icons">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_above="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/createAccount"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameEditText"
+
+            android:hint="Username"
+            android:nextFocusDown="@+id/emailEditText"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"
+            android:inputType="textAutoComplete"
+            android:textSize="20sp"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="30dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="Email"
+            android:textColorHint="@color/black"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:id="@+id/emailEditText"
+            android:inputType="textAutoComplete"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/confirmPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColorHint="@color/black"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/createUserButton"
+            android:padding="10dp"
+            android:text="Let's Get Cooking"
+            android:background="@color/white"
+            android:layout_marginTop="13dp"
+            android:textColor="@color/white"
+            android:backgroundTint="#F0B67F"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:id="@+id/loginTextView"
+            android:textColor="@color/black"
+            android:text="Already have an account? Log in here!"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

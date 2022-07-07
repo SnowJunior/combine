@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.josephinemenge.pika.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/foodbckg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="50dp"
+            android:text="Begin your recipe search"
+            android:textAlignment="center"
+            android:textColor="#0B0A07"
+            android:textSize="28sp"
+            android:textStyle="italic"/>
+
+        <EditText
+            android:id="@+id/fType"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter a Food type e.g chicken"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="textAutoCorrect"
+            android:textSize="20sp"
+            />
+
+
+        <EditText
+            android:id="@+id/health"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="33dp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="wrap_content"
+            android:hint="Health Label e.g gluten-free"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="textAutoCorrect"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/FRecipeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F0B67F"
+            android:text="Find Recipe"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginTop="60dp">
+        </Button>
+            <Button
+                android:id="@+id/SavedRecipes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saved Recipe's"
+                android:background="#F0B67F"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginTop="30dp">
+            </Button>
+        </LinearLayout>
+</RelativeLayout>
